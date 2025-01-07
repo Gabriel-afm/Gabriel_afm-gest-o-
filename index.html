@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Estoque</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestão de Estoque</h1>
+
+  <!-- Campo de busca/seleção de produto -->
+  <div class="form-container">
+    <label for="productSearch">Produto:</label>
+    <input type="text" id="productSearch" list="productList" placeholder="Digite ou selecione um produto">
+    <datalist id="productList">
+      <!-- INÍCIO DA PARTE 1 DA LISTA DE PRODUTOS -->
+      <option value="310004 - AÇAFRÃO PURO"></option>
+      <option value="301001 - AÇÚCAR CRISTAL"></option>
+      <option value="306213 - AÇÚCAR GELADO"></option>
+      <option value="301255 - AÇÚCAR IMPALPÁVEL"></option>
+      <option value="301049 - AÇÚCAR MASCAVO"></option>
+      <option value="301002 - AÇÚCAR REFINADO"></option>
+      <option value="301107 - ADOÇANTE CULINÁRIO"></option>
+      <option value="306077 - ÁGAR ÁGAR"></option>
+      <option value="312002 - AGUARDENTE"></option>
+      <option value="310101 - ALCAPARRAS"></option>
+      <option value="310296 - ALECRIM DESIDRATADO"></option>
+      <option value="307001 - AMEIXA SECA SEM SEMENTES"></option>
+      <option value="301048 - AMÊNDOAS LAMINADAS"></option>
+      <option value="301004 - AMENDOIM TORRADO"></option>
+      <option value="318011 - AMIDO DE MILHO"></option>
+      <option value="301006 - ARROZ AGULHINHA"></option>
+      <option value="301070 - ARROZ ARBÓREO"></option>
+      <option value="301033 - ARROZ INTEGRAL"></option>
+      <option value="301008 - ARROZ JAPONÊS GRÃO CURTO"></option>
+      <option value="301011 - ARROZ SELVAGEM"></option>
+      <option value="305001 - ATUM EM CONSERVA RALADO"></option>
+      <option value="307510 - AVEIA EM FLOCOS"></option>
+      <option value="310007 - AZEITE DE DENDÊ"></option>
+      <option value="312951 - AZEITE EXTRA VIRGEM"></option>
+      <option value="318035 - AZEITONA PRETA SEM CAROÇO"></option>
+      <option value="318055 - AZEITONA VERDE FATIADA"></option>
+      <option value="318057 - AZEITONA VERDE SEM CAROÇO GRAÚDA"></option>
+      <option value="301068 - BATATA PALHA"></option>
+      <option value="309386 - BETERRABA EM PÓ"></option>
+      <option value="306360 - BISCOITO NEGRESCO TOPPING TRITURADO"></option>
+      <option value="306684 - BISCOITO OREO ORIGINAL BAUNILHA"></option>
+      <option value="306003 - BOLACHA ÁGUA E SAL"></option>
+      <option value="306009 - BOLACHA MAIZENA"></option>
+      <option value="306138 - BOLACHA CHAMPANHE"></option>
+      <option value="309900 - BOMBOM OURO BRANCO"></option>
+      <option value="306002 - CACAU EM PÓ"></option>
+      <option value="301121 - CAFÉ PÓ SOLÚVEL ORIGINAL"></option>
+      <option value="307385 - CAIXA BASE TORTA DOCE CIRCULAR 8,4CM"></option>
+      <option value="307388 - CAIXA BASE TORTA DOCE TRIANGULAR 6CM"></option>
+      <option value="307396 - CAIXA BASE TORTA DOCE VERM CIRCULAR 4CM"></option>
+      <option value="306127 - CAKE RED VELVET"></option>
+      <option value="310059 - CALDO DE CARNE"></option>
+      <option value="310320 - CALDO DE LEGUMES"></option>
+      <option value="310321 - CALDO DE PEIXE"></option>
+      <option value="310019 - CALDO GALINHA"></option>
+      <option value="310240 - CANELA EM CASCA"></option>
+      <option value="310012 - CANELA EM PO"></option>
+      <option value="301041 - CASTANHA CAJU INTEIRA"></option>
+      <option value="301036 - CASTANHA CAJU RALADA"></option>
+      <option value="301062 - CASTANHA DE BARU NATIVA"></option>
+      <option value="301031 - CASTANHA DO PARA S CASCA"></option>
+      <option value="307009 - CEREJA CALDA VERMELHA MARASCHINO"></option>
+      <option value="307002 - CEREJA VERMELHA COM TALO EM CALDA"></option>
+      <option value="310246 - CHÁ VERDE"></option>
+      <option value="318005 - CHAMPIGON/COGUMELO FATIADO"></option>
+      <option value="310064 - CHIMICHURRI"></option>
+      <option value="306069 - CHOCOLATE AMARGO DIET EM BARRA"></option>
+      <option value="306888 - CHOCOLATE BRANCO GOTAS/BARRA"></option>
+      <option value="306022 - CHOCOLATE EM PO 32%"></option>
+      <option value="306491 - CHOCOLATE GRANULADO COLORIDO"></option>
+      <option value="306023 - CHOCOLATE GRANULADO"></option>
+      <option value="306886 - CHOCOLATE MEIO AMARGO GOTAS/BARRA"></option>
+      <option value="307293 - CHOCOLATE RASPAR COBRIR BRANCA"></option>
+      <option value="307292 - CHOCOLATE RASPAR COBRIR MEIO AMARGO"></option>
+      <option value="310887 - COBERTURA DIET BLEND CHOCOLATE"></option>
+      <option value="318886 - COBERTURA DIET BLEND MORANGO"></option>
+      <option value="306074 - COBERTURA FRACIONADA MEIO AMARGO"></option>
+      <option value="306064 - COBERTURA FRACIONADA BRANCA"></option>
+      <option value="306063 - COBERTURA FRACIONADA AO LEITE"></option>
+      <option value="307369 - COBERTURA GANACHE AO LEITE"></option>
+      <option value="307370 - COBERTURA GANACHE BRANCO"></option>
+      <option value="310024 - COCO RALADO S ACUCAR"></option>
+      <option value="309145 - COCO SECO EM FLOCOS"></option>
+      <option value="310026 - COLORAU VERMELHO PURO"></option>
+      <option value="310025 - COMINHO MOIDO"></option>
+      <option value="307420 - CORANTE CHOCOLATE AMARELO"></option>
+      <option value="307418 - CORANTE CHOCOLATE AZUL"></option>
+      <option value="307421 - CORANTE CHOCOLATE ROSA"></option>
+      <option value="307419 - CORANTE CHOCOLATE VERDE"></option>
+      <option value="307229 - CORANTE LARANJA"></option>
+      <option value="307375 - CORANTE VERMELHO MORANGO"></option>
+      <option value="306634 - CORANTE AMARELO GEMA"></option>
+      <option value="306797 - CORANTE ROSA CEREJA"></option>
+      <option value="306636 - CORANTE VERDE FOLHA"></option>
+      <option value="310065 - COUSCOUS MARROQUINO"></option>
+      <option value="310027 - CRAVO DA INDIA"></option>
+      <option value="301123 - CREME DE CEBOLA"></option>
+      <option value="312988 - CURCUMA EM PO"></option>
+      <option value="310085 - CURRY DA INDIA"></option>
+      <option value="309146 - DAMASCO DESIDRATADO"></option>
+      <option value="322208 - DOCE CASEIRO DE BANANA"></option>
+      <option value="322210 - DOCE CASEIRO DE GOIABA"></option>
+      <option value="307003 - DOCE DE ABACAXI EM CALDA"></option>
+      <option value="322005 - DOCE DE LEITE"></option>
+      <option value="310094 - ERVA DOCE EM GRAOS"></option>
+      <option value="310365 - ESPINAFRE EM PO"></option>
+      <option value="301129 - GERGELIM PRETO"></option>
+      <option value="307008 - GOIABADA TABLETE"></option>
+      <option value="301023 - GRÃO DE BICO"></option>
+      <option value="310002 - HORTELÃ EM FLOCOS"></option>
+      <option value="310360 - KETCHUP TRADICIONAL"></option>
+      <option value="308077 - LEITE CONDENSADO"></option>
+      <option value="310891 - LEITE DE COCO"></option>
+      <option value="308102 - LEITE EM PÓ INTEGRAL"></option>
+      <option value="308050 - LEITE LONGA VIDA INTEGRAL"></option>
+      <option value="301024 - LENTILHA SECA"></option>
+      <option value="309069 - LOURO SECO"></option>
+      <option value="318028 - MACARRÃO CABELO DE ANJO"></option>
+      <option value="318024 - MACARRÃO FARFALLE MIÚDO GRAVATINHA"></option>
+      <option value="318016 - MACARRÃO PARAFUSO"></option>
+      <option value="318022 - MACARRÃO SPAGHETTI"></option>
+      <option value="310106 - MAIONESE"></option>
+      <option value="310242 - MANJERICÃO DESIDRATADO"></option>
+      <option value="318550 - MASSA BIFUM ESPAGUETE DE ARROZ"></option>
+      <option value="310049 - MEL DE ABELHA PURO"></option>
+      <option value="306277 - MELHORADOR DE MASSA P/ PANIFICAÇÃO ZAP"></option>
+      <option value="301449 - MILHO BRANCO CANJICA"></option>
+      <option value="301021 - MILHO PARA CANJICA AMARELO"></option>
+      <option value="318012 - MILHO VERDE CONSERVA"></option>
+      <option value="307491 - MINI CONE MARVI"></option>
+      <option value="307411 - MISTURA BOLO BAUNILHA ZERO AÇÚCAR"></option>
+      <option value="307410 - MISTURA BOLO CHOCOLATE ZERO AÇÚCAR"></option>
+      <option value="307412 - MISTURA BOLO COCO ZERO AÇÚCAR"></option>
+      <option value="307413 - MISTURA BOLO LARANJA ZERO AÇÚCAR"></option>
+      <option value="307414 - MISTURA BOLO NEUTRO ZERO AÇÚCAR"></option>
+      <option value="306499 - MISTURA P CREME CONFEITEIRO"></option>
+      <option value="306304 - MISTURA PARA BROWNIE"></option>
+      <option value="310002 - HORTELÃ EM FLOCOS"></option>
+      <option value="310360 - KETCHUP TRADICIONAL"></option>
+      <option value="308077 - LEITE CONDENSADO"></option>
+      <option value="310891 - LEITE DE COCO"></option>
+      <option value="308102 - LEITE EM PÓ INTEGRAL"></option>
+      <option value="308050 - LEITE LONGA VIDA INTEGRAL"></option>
+      <option value="301024 - LENTILHA SECA"></option>
+      <option value="309069 - LOURO SECO"></option>
+      <option value="318028 - MACARRÃO CABELO DE ANJO"></option>
+      <option value="318024 - MACARRÃO FARFALLE MIÚDO GRAVATINHA"></option>
+      <option value="318016 - MACARRÃO PARAFUSO"></option>
+      <option value="318022 - MACARRÃO SPAGHETTI"></option>
+      <option value="310106 - MAIONESE"></option>
+      <option value="310242 - MANJERICÃO DESIDRATADO"></option>
+      <option value="318550 - MASSA BIFUM ESPAGUETE DE ARROZ"></option>
+      <option value="310049 - MEL DE ABELHA PURO"></option>
+      <option value="306277 - MELHORADOR DE MASSA P/ PANIFICAÇÃO ZAP"></option>
+      <option value="301449 - MILHO BRANCO CANJICA"></option>
+      <option value="301021 - MILHO PARA CANJICA AMARELO"></option>
+      <option value="318012 - MILHO VERDE CONSERVA"></option>
+      <option value="307491 - MINI CONE MARVI"></option>
+      <option value="307411 - MISTURA BOLO BAUNILHA ZERO AÇÚCAR"></option>
+      <option value="307410 - MISTURA BOLO CHOCOLATE ZERO AÇÚCAR"></option>
+      <option value="307412 - MISTURA BOLO COCO ZERO AÇÚCAR"></option>
+      <option value="307413 - MISTURA BOLO LARANJA ZERO AÇÚCAR"></option>
+      <option value="307414 - MISTURA BOLO NEUTRO ZERO AÇÚCAR"></option>
+      <option value="306499 - MISTURA P CREME CONFEITEIRO"></option>
+      <option value="306304 - MISTURA PARA BROWNIE"></option>
+      <option value="310141 - MOLHO DE OSTRA"></option>
+      <option value="310198 - MOLHO ESCURO DEMI GLACE"></option>
+      <option value="310110 - MOLHO INGLÊS"></option>
+      <option value="310015 - MOLHO PIMENTA TABASCO"></option>
+      <option value="310033 - ESSÊNCIA BAUNILHA"></option>
+      <option value="310388 - ESSÊNCIA DE LARANJA"></option>
+      <option value="310387 - ESSÊNCIA DE LIMÃO"></option>
+      <option value="310389 - ESSÊNCIA DE MAÇÃ"></option>
+      <option value="312994 - ESSÊNCIA DE MILHO VERDE"></option>
+      <option value="301104 - FARINHA DE AMÊNDOA"></option>
+      <option value="301390 - FARINHA DE MANDIOCA DO CARA BRANCA"></option>
+      <option value="306167 - FARINHA DE ROSCA"></option>
+      <option value="301416 - FARINHA DE TRIGO PASTEL/MASSA"></option>
+      <option value="301428 - FARINHA DE TRIGO PIZZA"></option>
+      <option value="301015 - FARINHA DE TRIGO 1KG"></option>
+      <option value="301417 - FARINHA DE TRIGO SUPREMA SALGADOS"></option>
+      <option value="301077 - FARINHA PANKO"></option>
+      <option value="301016 - FARINHA TRIGO INTEGRAL"></option>
+      <option value="301051 - FARINHA TRIGO EXTRA CLARA"></option>
+      <option value="301019 - FEIJÃO CARIOCA"></option>
+      <option value="301027 - FEIJÃO FRADINHO"></option>
+      <option value="301020 - FEIJÃO PRETO TIPO 1"></option>
+      <option value="301018 - FEIJÃO BRANCO"></option>
+      <option value="308002 - FERMENTO EM PÓ QUÍMICO"></option>
+      <option value="308071 - FERMENTO GRANULADO MASSA DOCE"></option>
+      <option value="306693 - FIOR AMERENA MEC3"></option>
+      <option value="306698 - FIOR DI ARANCIO MEC3"></option>
+      <option value="301160 - FLÓCÃO DE ARROZ"></option>
+      <option value="306702 - FLÓCÃO MILHO"></option>
+      <option value="307477 - FONDANT"></option>
+      <option value="301394 - FRUTOSE"></option>
+      <option value="301022 - FUBÁ DE MILHO"></option>
+      <option value="310108 - FUNGHI SECCHI"></option>
+      <option value="310041 - GELATINA NEUTRA"></option>
+      <option value="307521 - GELEIA DE BRILHO CHOCOLATE"></option>
+      <option value="307520 - GELEIA DE BRILHO LIMÃO"></option>
+      <option value="306911 - GELEIA DE BRILHO MARACUJÁ"></option>
+      <option value="306525 - GELEIA DE BRILHO NEUTRA"></option>
+      <option value="301035 - GERGELIM BRANCO"></option>
+      <option value="310001 - MOLHO SHOYO"></option>
+      <option value="310362 - MOSTARDA"></option>
+      <option value="310086 - NORI YAMAMOTOYAMA"></option>
+      <option value="310258 - NOZ MOSCADA MOÍDA"></option>
+      <option value="301028 - NOZES INTEIRA EXTRA LIGHT SEM CASCA"></option>
+      <option value="322075 - NUTELLA CREME DE AVELÃ C/ CACAU"></option>
+      <option value="310060 - ÓLEO DE SOJA REFINADO"></option>
+      <option value="310136 - ÓLEO GERGELIM"></option>
+      <option value="310061 - ORÉGANO"></option>
+      <option value="318033 - PALMITO INTEIRO"></option>
+      <option value="310899 - PÁPRICA DEFUMADA"></option>
+      <option value="310084 - PÁPRICA DOCE"></option>
+      <option value="312907 - PÁPRICA PICANTE"></option>
+      <option value="307517 - PASTA VARIEGATO TRUFA CHOCOLATE LEITE VAB 4KG"></option>
+      <option value="306969 - PECTINA CULINÁRIA"></option>
+
+      <!-- FIM DA PARTE 1 DA LISTA DE PRODUTOS -->
+
+      <!-- INÍCIO DA PARTE 2 DA LISTA DE PRODUTOS (adicionar aqui!) -->
+      <option value="004 - Produto D"></option>
+      <option value="005 - Produto E"></option>
+      <option value="006 - Produto F"></option>
+      <!-- FIM DA PARTE 2 DA LISTA DE PRODUTOS -->
+    </datalist>
+  </div>
+
+  <!-- Campo de quantidade -->
+  <div class="form-container">
+    <label for="quantity">Quantidade:</label>
+    <input type="number" id="quantity" placeholder="Digite a quantidade" />
+  </div>
+
+  <!-- Campo de conversão -->
+  <div class="form-container">
+    <label for="unitConversion">Unidade:</label>
+    <select id="unitConversion">
+      <option value="kg">Kg</option>
+      <option value="lt">Lt</option>
+      <option value="und">Und</option>
+    </select>
+    <label for="conversionRate">Taxa por unidade:</label>
+    <input type="number" id="conversionRate" placeholder="Ex: 10 Kg por unidade" />
+    <button onclick="convertUnit()">Converter</button>
+  </div>
+
+  <!-- Tabela de registros -->
+  <h2>Registros</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Código</th>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Unidade Convertida</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="recordTable">
+      <!-- Registros adicionados serão exibidos aqui -->
+    </tbody>
+  </table>
+
+  <!-- Botões de exportação -->
+  <div class="export-buttons">
+    <button onclick="exportToTxt()">Exportar Registros (.txt)</button>
+    <button onclick="exportToCsv()">Exportar Registros (.csv)</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
